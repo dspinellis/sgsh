@@ -49,6 +49,6 @@ while read mode name ; do
     esac
   done
   target=$DGPATH/$name
-  echo "#!$DGPATH/dgsh-wrap$opt" >$target
+  echo "#!$PREFIX/libexec/dgsh/dgsh-wrap$opt" >$target
   chmod 755 $target
 done
